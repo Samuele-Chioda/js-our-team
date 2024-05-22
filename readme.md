@@ -16,7 +16,7 @@ Ragioniamo come sempre a step. Prima la logica in italiano e poi traduciamo in c
 E ricordiamoci che console.log() è nostro amico!
 
 
-
+Dati:
 Wayne Barnett	Founder & CEO	wayne-barnett-founder-ceo.jpg
 Angela Caroll	Chief Editor	angela-caroll-chief-editor.jpg
 Walter Gordon	Office Manager	walter-gordon-office-manager.jpg
