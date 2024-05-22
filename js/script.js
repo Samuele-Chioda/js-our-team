@@ -39,6 +39,22 @@ for (let membroTeam of team) {
     console.log('Nome: ' + membroTeam.nome);
     console.log('Ruolo: ' + membroTeam.ruolo);
     console.log('img: ' + membroTeam.img);
-    // spazio tra informazioni di un oggetto e un altro con il trattino
-    console.log('-');
+    // spazio tra informazioni di un oggetto e un altro con i trattini
+    console.log('---');
 }
+
+// sezione DOM
+const container = document.getElementById('container');
+let teamInfoString = '';
+for (let membro of team) {
+    teamInfoString = teamInfoString + "Nome: " + membro.nome + "<br>";
+    teamInfoString = teamInfoString + "Ruolo: " + membro.ruolo + "<br>";
+    teamInfoString = teamInfoString + "Foto: " + membro.foto + "<br>";
+    teamInfoString = teamInfoString + "--------------------<br>";
+}
+container.innerHTML = teamInfoString;
+
+// teamString = teamString +... è uguale a teamString += ... senza doverlo riscrivere due volte
+
+
+
