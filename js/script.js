@@ -31,9 +31,6 @@ let team = [{
     img:('barbara-ramos-graphic-designer.jpg')
 },
 ];
-
-console.log(team);
-
 // aggiungo ciclo for of che itera su ogni oggetto dell'array e stampa le info che ho definito
 for (let membroTeam of team) {
     console.log('Nome: ' + membroTeam.nome);
@@ -42,18 +39,16 @@ for (let membroTeam of team) {
     // spazio tra informazioni di un oggetto e un altro con i trattini
     console.log('---');
 }
-
 // sezione DOM
 const container = document.getElementById('container');
 let teamInfoString = '';
 for (let membro of team) {
     teamInfoString = teamInfoString + "Nome: " + membro.nome + "<br>";
     teamInfoString = teamInfoString + "Ruolo: " + membro.ruolo + "<br>";
-    teamInfoString = teamInfoString + "Foto: " + membro.foto + "<br>";
+    teamInfoString = teamInfoString + "Foto: " + membro.img + "<br>";
     teamInfoString = teamInfoString + "--------------------<br>";
 }
 container.innerHTML = teamInfoString;
-
 // teamString = teamString +... è uguale a teamString += ... senza doverlo riscrivere due volte
 
 
